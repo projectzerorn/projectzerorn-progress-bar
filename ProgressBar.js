@@ -52,7 +52,7 @@ var ProgressBar = React.createClass({
 
     return (
       <View style={[styles.background, this.props.backgroundStyle, this.props.style]}>
-        <Animated.View style={[styles.fill, this.props.fillStyle, { width: fillWidth }]}/>
+        <Animated.View style={[styles.fill, this.props.fillStyle, {width:fillWidth, borderRadius:this.props.style.borderRadius}]}/>
       </View>
     );
   },
