@@ -5,6 +5,7 @@ import {
   StyleSheet,
   View
 } from 'react-native';
+const createReactClass = require('create-react-class');
 
 var styles = StyleSheet.create({
   background: {
@@ -18,7 +19,7 @@ var styles = StyleSheet.create({
   }
 });
 
-var ProgressBar = React.createClass({
+var ProgressBar = createReactClass({
 
   getDefaultProps() {
     return {
